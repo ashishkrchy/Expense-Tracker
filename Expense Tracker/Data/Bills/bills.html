@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Data</title>
+    <link rel="stylesheet" type="text/css" href="bills.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+
+    <div id="navbar">
+        <h1>Expense Data</h1>
+        <button id="backBtn" onclick="history.back()">Go Back</button>
+    </div>
+    
+    <div id="heading">
+         <h2>Bills</h2>
+    </div>
+
+
+    <div class="container">
+
+        <div class="left" id="categoryData">
+            <table>
+                <thead>
+                   <tr>
+                      <th id="frstcol">Date</th>
+                      <th id="seccol">Amount</th>
+                   </tr>
+                </thead>
+                <tbody id="data-output">
+                </tbody>
+             </table>          
+        </div>
+
+        <div class="right">
+            <div class="graph">
+                <h2>Graph</h2>
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            </div>  
+        </div>
+
+    </div>
+
+    <script src="bills.js"></script>
+
+</body>
+</html>
+

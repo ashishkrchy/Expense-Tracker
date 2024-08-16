@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Signup Page</title>
+</head>
+<body>
+        <div class="container">
+            <div class="title">Sign up</div>
+            <form action="your_server_endpoint_here" method="post">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box" >
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your Username"  required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>                   
+                        <input type="text" placeholder="Enter your email" id="email" name="email" required>
+                        <div class="error-box">
+                            <div class="error">Invalid email address!</div>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="tel" placeholder="Enter your number" required>
+                        <div class="error-box">
+                            <div class="error">Phone number should have at least 10 digits!</div>
+                        </div>
+                    </div>
+                    <div class="input-box" >
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="Enter your password" id="password" name="password" required>
+                        <div class="error-box">
+                            <div class="error">Password should have at least 8 characters!</div>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" placeholder="Confirm your password" required>
+                        <div class="error-box">
+                            <div class="error">Passwords do not match!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit"  onclick="move2()">Sign Up</button>
+                </div>
+              
+            </form>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

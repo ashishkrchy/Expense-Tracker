@@ -1,0 +1,193 @@
+body {
+  font-family:'times new roman','serif';
+  /* background:rgba(5, 5, 5, 0.947); */
+  background:#E55A4F;
+  background-size: cover;
+  background-position: center;
+  margin: 0 0 4px 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 1; */
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  width: 100%;
+  height: 55px;
+  background-color: #E55A4F;
+  border: 1px solid #03e9f4;
+  box-shadow: 0 0 5px #03e9f4, 0 0 3px #03e9f4, 0 0 2px #03e9f4, 0 0 1px #03e9f4;
+}
+#navbar img {
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 50px;
+  height: 45px;
+}
+
+#navbar h1 {
+  color: white;
+  margin-left:  0; 
+  font-size: 30px;
+}
+
+#btn {
+  display: flex;
+}
+
+#btn button {   
+    /* box-shadow: 0 0 1px #03e9f4, 0 0 1px #03e9f4, 0 0 1px #03e9f4, 0 0 1px #03e9f4; */
+    background-color: white;
+    transition: all 1s ease-in-out;
+    width: 100px;
+    padding: 8px 10px;
+    margin: 0 3px 5px 1px;
+    font-weight: 450;
+    border: 1px solid rgba(43, 255, 209, 0.716);
+    border-radius: 5px;
+}
+
+#btn a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;  
+  font-size: 14px;
+}
+
+#btn button:hover{
+    width: 125px;
+    color: white;
+    box-shadow: 0 0 5px #091ee3, 0 0 6px #091ee3, 0 0 7px #091ee3, 0 0 8px #091ee3;
+    transition: all 0.6s ease-in-out;
+}
+
+
+
+.container {
+  max-width: 98%;
+  background:#F5FFFA;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(195, 34, 34, 0.308);
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+.expense-category {
+    flex-basis: calc(100% - 80px);
+    margin: 20px 5px;
+    height:  25vh;
+    padding: 20px;
+    border: 1px solid aqua;
+    background-color: FFFFFF;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+    box-shadow: 0 0 3px #98FB98, 0 0 3px #98FB98, 0 0 3px #98FB98, 0 0 3px #98FB98;
+}
+
+.expense-category h2 {
+    font-size: 20px;
+}
+
+input[type="text"] {
+    
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.expense-category button {
+    box-shadow:  0 0 3px #2e1d01, 0 0 3px #2e1d01, 0 0 3px #2e1d01, 0 0 3px #2e1d01;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.716);
+    border-radius: 5px;
+    background-color: #FF6F61;
+}
+.expense-category button:hover {
+    background: #E55A4F;
+    width:130px;
+    box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 6px white, 0 0 7px white, 0 0 8px white;
+    transition: all 0.6s ease-in-out;
+}
+.show a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    margin: 5px 0;
+    color: rgb(252, 244, 21);
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #03001C;
+}
+#netAmount {
+    width: 100%;
+    padding: 15px 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:white;
+    color: black;
+}
+label {
+    font-size: large;
+    font-weight: 750;
+    color: white;
+}
+#calculateNetExpense {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    margin-top: 5px;
+    border: 1px solid #03e9f4;
+    border-radius: 10px;
+    background-color: #250000;
+    box-shadow:  0 0 3px #03e9f4, 0 0 3px #03e9f4, 0 0 3px #03e9f4, 0 0 3px #03e9f4;
+    color: black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 750;
+    color: white;
+}
+#calculateNetExpense:hover {
+    background: #000000;
+    color: white;
+    box-shadow: 0 0 5px #091ee3, 0 0 6px #091ee3, 0 0 7px #091ee3, 0 0 8px #091ee3;
+    transition: all 0.6s ease-in-out;
+}
+
+body::-webkit-scrollbar{
+    scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 768px) {
+    .expense-category {
+        flex-basis: calc(50% - 20px);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .expense-category {
+        flex-basis: calc(33.33% - 20px);
+    }
+}

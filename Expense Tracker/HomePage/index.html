@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+
+    <div id="navbar">
+      <img src="/images/expenseLogo.png" alt="expense_logo" />
+      <h1>Expense Tracker</h1>
+      <div id="btn" class="right-btn">
+        <button>
+          <a href="/LoginPage/login.html" id="login">Login</a>
+        </button>
+        <button>
+          <a href="/SignUpPage/signup.html" id="signup">Sign Up</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+        <section class="expense-category">
+            <h2>Grocery</h2>
+            <input type="text" id="grocery" placeholder="Enter expense amount" />
+            <button id="b1" onclick="addExpense('grocery') ">Add Expense</button>
+            <button class="show" onclick="show('grocery')">Show</button>
+            <button class="reset" onclick="reset('grocery')">Reset</button>
+            <ul id="groceryList"><p id="para1"></p></ul>
+        </section>
+
+        <section class="expense-category">
+            <h2>Entertainment</h2>
+            <input  type="text"  id="entertainment"  placeholder="Enter expense amount" />
+            <button id="b2" onclick="addExpense('entertainment')">Add Expense</button>
+            <button class="show" onclick="show('entertainment')">Show</button>
+            <button class="reset" onclick="reset('entertainment')">Reset</button>
+            <ul id="entertainmentList"><p id="para2"></p></ul>
+        </section>
+
+        <section class="expense-category">
+            <h2>Bills</h2>
+            <input type="text" id="bills" placeholder="Enter expense amount" />
+            <button id="b3" onclick="addExpense('bills')">Add Expense</button>
+            <button class="show" onclick="show('bills')">Show</button>
+            <button class="reset" onclick="reset('bills')">Reset</button>
+            <ul id="billsList"><p id="para3"></p></ul>
+        </section>
+
+        <section class="expense-category">
+            <h2>Other Expenses</h2>
+            <input type="text" id="other" placeholder="Enter expense amount" />
+            <button id="b4" onclick="addExpense('other')">Add Expense</button>
+            <button class="show" onclick="show('other')">Show</button>
+            <button class="reset" onclick="reset('other')">Reset</button>
+            <ul id="otherList"><p id="para4"></p></ul>
+        </section>      
+    </div>
+
+    <footer>   
+      <strong>
+        <label for="net">Net Amount: </label>
+          <div id="bottom">
+            <div id="netAmount"></div>
+              <div>
+                <button id="calculateNetExpense" onclick="calculateNetExpense()">
+                  Calculate Net Expense
+                </button>
+              </div>
+          </div>
+      </strong>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
